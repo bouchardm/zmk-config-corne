@@ -132,6 +132,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        delete {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
