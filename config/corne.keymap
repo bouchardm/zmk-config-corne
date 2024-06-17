@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 // Layers
@@ -136,10 +135,10 @@
 
         prog {
             bindings = <
-&none  &kp AT_SIGN  &kp SQT            &kp FSLH  &kp PLUS   &kp AMPS        &kp LBKT     &kp LT                &kp GREATER_THAN       &kp EQUAL  &kp COLON  &none
-&none  &kp EXCL     &kp DOUBLE_QUOTES  &kp PIPE  &kp MINUS  &kp DOLLAR      &kp RBKT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp TILDE  &none
-&none  &kp STAR     &kp GRAVE          &kp BSLH  &kp UNDER  &kp QUESTION    &kp PERCENT  &kp LBRC              &kp RBRC               &kp POUND  &trans     &none
-                                       &trans    &trans     &trans          &trans       &trans                &trans
+&none  &kp RA(DOUBLE_QUOTES)  &kp LS(COMMA)      &kp LS(NUMBER_3)  &kp LS(EQUAL)  &kp LS(N7)      &kp LBKT     &kp LT                &kp GREATER_THAN       &kp EQUAL  &kp COLON  &none
+&none  &kp EXCL               &kp DOUBLE_QUOTES  &kp PIPE          &kp MINUS      &kp DOLLAR      &kp RBKT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp TILDE  &none
+&none  &kp STAR               &kp GRAVE          &kp BSLH          &kp UNDER      &kp QUESTION    &kp PERCENT  &kp LBRC              &kp RBRC               &kp POUND  &trans     &none
+                                                 &trans            &trans         &trans          &trans       &trans                &trans
             >;
         };
 
@@ -154,9 +153,9 @@
 
         i3 {
             bindings = <
-&none  &kp LS(Q)  &trans  &trans  &trans  &trans    &trans    &kp TAB   &trans  &trans     &bt BT_CLR  &none
-&none  &trans     &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans      &none
-&none  &trans     &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans      &none
+&none  &kp LS(Q)  &trans  &trans  &trans  &trans    &trans    &kp TAB   &trans  &trans     &trans  &none
+&none  &trans     &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &none
+&none  &trans     &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &none
                           &trans  &trans  &trans    &trans    &trans    &trans
             >;
         };
