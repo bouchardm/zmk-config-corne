@@ -54,6 +54,8 @@
                 <&macro_param_2to1 &kp MACRO_PLACEHOLDER &macro_param_1to1 &mo MACRO_PLACEHOLDER>;
 
             label = "TOGGLE_WITH_MODIFIER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
