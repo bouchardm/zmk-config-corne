@@ -111,6 +111,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
         };
+
+        firstlayer {
+            bindings = <&tog 0>;
+            key-positions = <38 39>;
+        };
     };
 
     keymap {
@@ -167,6 +172,24 @@
 &trans  &kp TAB  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans          &bt BT_NXT  &trans
 &trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans          &trans      &trans
                          &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        hots {
+            bindings = <
+&kp ESC  &kp N1  &kp N2  &kp N3    &kp N4   &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp Q   &kp W   &kp E     &kp R    &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&kp Z    &trans  &kp D   &trans    &trans   &kp G        &trans  &trans  &trans  &trans  &trans  &trans
+                         &kp LALT  &kp TAB  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        fortnite {
+            bindings = <
+&kp ESC    &trans    &kp W   &kp E    &kp R      &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp A     &kp S   &kp D    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp LALT  &trans  &trans   &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                             &kp TAB  &kp LCTRL  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
