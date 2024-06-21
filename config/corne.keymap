@@ -136,10 +136,10 @@
 
         prog {
             bindings = <
-&none  &kp AT    &kp SQT           &kp FSLH       &kp PLUS   &kp AMPS            &kp LEFT_BRACKET  &kp LT                &kp GREATER_THAN       &kp EQUAL  &kp COLON  &none
-&none  &kp EXCL  &kp RS(NUMBER_2)  &kp RS(POUND)  &kp MINUS  &kp DOLLAR          &kp RBKT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp TILDE  &none
-&none  &kp STAR  &kp GRAVE         &kp RA(POUND)  &kp UNDER  &kp RS(NUMBER_6)    &kp PERCENT       &kp LBRC              &kp RBRC               &kp POUND  &trans     &none
-                                   &trans         &trans     &trans              &trans            &trans                &trans
+&none  &kp RA(NUMBER_2)  &kp RA(COMMA)     &kp LS(POUND)  &kp PLUS   &kp AMPS            &kp RA(LEFT_BRACKET)  &kp LESS_THAN         &kp RS(LESS_THAN)      &kp EQUAL  &kp COLON          &none
+&none  &kp EXCL          &kp RS(NUMBER_2)  &kp TILDE      &kp MINUS  &kp DOLLAR          &kp RA(RBKT)          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp RA(SEMICOLON)  &none
+&none  &kp STAR          &kp GRAVE         &kp RA(POUND)  &kp UNDER  &kp RS(NUMBER_6)    &kp PERCENT           &kp RA(GRAVE)         &kp RA(LESS_THAN)      &kp APOS   &trans             &none
+                                           &trans         &trans     &trans              &trans                &trans                &trans
             >;
         };
 
