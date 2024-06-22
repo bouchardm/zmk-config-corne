@@ -171,10 +171,10 @@
 
         fn {
             bindings = <
-&trans  &trans  &trans  &trans  &bt BT_CLR  &test     &trans  &trans      &trans      &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &to 7       &trans    &to 6   &bt BT_NXT  &bt BT_PRV  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans      &trans    &trans  &trans      &trans      &trans  &trans  &trans
-                        &trans  &trans      &trans    &trans  &trans      &trans
+&trans  &trans  &trans  &trans  &bt BT_CLR  &test          &trans  &trans      &trans      &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &to 7       &trans         &to 6   &bt BT_NXT  &bt BT_PRV  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans      &bootloader    &trans  &trans      &trans      &trans  &trans  &trans
+                        &trans  &trans      &trans         &trans  &trans      &trans
             >;
 
             label = "fn";
