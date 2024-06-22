@@ -239,5 +239,10 @@
             if-layers = <1 6>;
             then-layer = <7>;
         };
+
+        alt2 {
+            if-layers = <1>;
+            then-layer = <5>;
+        };
     };
 };
