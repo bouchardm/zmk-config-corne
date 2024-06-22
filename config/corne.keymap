@@ -113,7 +113,7 @@
         };
 
         firstlayer {
-            bindings = <&tog 0>;
+            bindings = <&to 0>;
             key-positions = <38 39>;
         };
     };
