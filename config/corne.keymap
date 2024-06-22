@@ -121,13 +121,15 @@
     keymap {
         compatible = "zmk,keymap";
 
-        windows_default_layer {
+        default {
             bindings = <
 &none  &kp Q             &kp W  &kp E           &kp R               &kp T          &kp Y        &kp U   &kp I                &kp O    &kp P                      &none
 &none  &mt LEFT_SHIFT A  &kp S  &kp D           &lt 5 F             &kp G          &kp H        &kp J   &kp K                &kp L    &mt RIGHT_SHIFT SEMICOLON  &none
 &none  &kp Z             &kp X  &kp C           &kp V               &kp B          &kp N        &kp M   &kp COMMA            &kp DOT  &kp FSLH                   &none
-                                &lm 4 LEFT_WIN  &lm 7 LEFT_CONTROL  &lt 1 SPACE    &lt 2 ENTER  &kp F2  &mt LEFT_ALT ESCAPE
+                                &lm 4 LEFT_WIN  &lm 6 LEFT_CONTROL  &lt 1 SPACE    &lt 2 ENTER  &kp F2  &mt LEFT_ALT ESCAPE
             >;
+
+            label = "main";
         };
 
         vim {
@@ -137,6 +139,8 @@
 &none  &kp C_AC_UNDO  &kp C_AC_CUT   &kp C_AC_COPY  &kp C_AC_PASTE  &kp LC(LEFT)    &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans       &none
                                      &trans         &trans          &trans          &trans          &trans         &trans
             >;
+
+            label = "vim";
         };
 
         prog {
@@ -146,6 +150,8 @@
 &none  &kp STAR          &kp APOS          &kp RA(GRAVE)  &kp UNDER  &kp RS(NUMBER_6)    &kp PERCENT           &kp RA(SINGLE_QUOTE)  &kp RA(BACKSLASH)      &kp GRAVE  &kp RA(SEMI)  &none
                                            &trans         &trans     &trans              &trans                &trans                &trans
             >;
+
+            label = "prog";
         };
 
         num {
@@ -155,6 +161,8 @@
 &none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans  &none
                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "num";
         };
 
         i3 {
@@ -164,6 +172,8 @@
 &none  &trans     &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &none
                           &trans  &trans  &trans    &trans    &trans    &trans
             >;
+
+            label = "i3";
         };
 
         fn {
@@ -173,15 +183,8 @@
 &trans  &trans   &trans  &trans  &trans  &trans    &to 9   &trans  &trans  &trans          &trans      &trans
                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
-        };
 
-        alt {
-            bindings = <
-&trans  &kp LA(TAB)  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans  &trans  &trans    &trans  &trans  &trans
-            >;
+            label = "fn";
         };
 
         ctrl {
@@ -191,6 +194,19 @@
 &trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "ctrl";
+        };
+
+        alt {
+            bindings = <
+&trans  &kp LA(TAB)  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "alt";
         };
 
         hots {
@@ -211,6 +227,8 @@
 &trans  &kp LSHFT  &kp LALT  &trans   &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
                              &kp TAB  &kp LCTRL  &kp SPACE    &trans  &trans  &trans
             >;
+
+            label = "fortnite";
         };
     };
 
@@ -218,8 +236,8 @@
         compatible = "zmk,conditional-layers";
 
         alt {
-            if-layers = <1 7>;
-            then-layer = <6>;
+            if-layers = <1 6>;
+            then-layer = <7>;
         };
     };
 };
