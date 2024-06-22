@@ -107,11 +107,6 @@
             key-positions = <19 20>;
         };
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
-        };
-
         firstlayer {
             bindings = <&to 0>;
             key-positions = <38 39>;
@@ -124,9 +119,9 @@
         default {
             bindings = <
 &none  &kp Q              &kp W                &kp E            &kp R               &kp T          &kp Y        &kp U              &kp I                &kp O                 &kp P                       &none
-&none  &hmr LEFT_SHIFT A  &hmr LEFT_CONTROL S  &hmr LEFT_ALT D  &lt 5 F             &kp G          &kp H        &hmr RIGHT_META J  &hmr RIGHT_ALT K     &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON  &none
+&none  &hmr LEFT_SHIFT A  &hmr LEFT_CONTROL S  &hmr LEFT_ALT D  &mt LEFT_META F     &kp G          &kp H        &hmr RIGHT_META J  &hmr RIGHT_ALT K     &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON  &none
 &none  &kp Z              &kp X                &kp C            &kp V               &kp B          &kp N        &kp M              &kp COMMA            &kp DOT               &kp FSLH                    &none
-                                               &lm 4 LEFT_WIN   &lm 6 LEFT_CONTROL  &lt 1 SPACE    &lt 2 ENTER  &kp F2             &mt LEFT_ALT ESCAPE
+                                               &kp ESCAPE       &lm 4 LEFT_CONTROL  &lt 1 SPACE    &lt 2 ENTER  &kp F2             &mt LEFT_ALT ESCAPE
             >;
 
             label = "main";
@@ -165,37 +160,24 @@
             label = "num";
         };
 
-        i3 {
+        numpad {
             bindings = <
-&none  &kp LS(Q)  &trans     &trans    &trans  &trans    &trans    &kp TAB   &trans  &trans     &trans  &none
-&none  &kp LSHFT  &kp LCTRL  &kp LALT  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &none
-&none  &trans     &trans     &trans    &trans  &trans    &trans    &trans    &trans  &trans     &trans  &none
-                             &trans    &trans  &trans    &trans    &trans    &trans
+&trans  &trans     &trans     &trans    &trans    &trans    &trans  &kp N7  &kp N8  &kp N9  &trans   &trans
+&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp RET  &trans
+&trans  &trans     &trans     &trans    &trans    &trans    &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT  &trans
+                              &trans    &trans    &trans    &trans  &trans  &trans
             >;
-
-            label = "i3";
         };
 
         fn {
             bindings = <
-&trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &bt BT_CLR_ALL  &bt BT_CLR  &trans
-&trans  &kp TAB  &trans  &trans  &trans  &trans    &to 7   &trans  &trans  &trans          &bt BT_NXT  &trans
-&trans  &trans   &trans  &trans  &trans  &trans    &to 8   &trans  &trans  &trans          &trans      &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &bt BT_CLR  &test     &trans  &trans      &trans      &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &to 7       &trans    &to 6   &bt BT_NXT  &bt BT_PRV  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans      &trans    &trans  &trans      &trans      &trans  &trans  &trans
+                        &trans  &trans      &trans    &trans  &trans      &trans
             >;
 
             label = "fn";
-        };
-
-        ctrl {
-            bindings = <
-&trans  &kp TAB  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-
-            label = "ctrl";
         };
 
         hots {
