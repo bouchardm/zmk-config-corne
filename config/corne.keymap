@@ -113,7 +113,7 @@
         };
 
         firstlayer {
-            bindings = <&to 0>;
+            bindings = <&tog 0>;
             key-positions = <38 39>;
         };
     };
@@ -177,10 +177,10 @@
 
         hots {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3    &kp N4   &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp Q   &kp W   &kp E     &kp R    &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp Z    &trans  &trans  &kp D     &trans   &kp G        &trans  &trans  &trans  &trans  &trans  &trans
-                         &kp LALT  &kp TAB  &kp SPACE    &trans  &trans  &trans
+&none  &kp N1  &kp N2  &kp N3    &kp N4   &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp Q   &kp W   &kp E     &kp R    &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&none  &trans  &trans  &kp D     &trans   &kp G        &trans  &trans  &trans  &trans  &trans  &trans
+                       &kp LALT  &kp TAB  &kp SPACE    &trans  &trans  &trans
             >;
         };
 
