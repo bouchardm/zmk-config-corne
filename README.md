@@ -1,3 +1,5 @@
+https://nickcoutsos.github.io/keymap-editor/
+
 # zmk-config-corne
 My ZMK-Config for my 36 key wireless Corne. Built with the intention of limiting as many dual function keys as possible.
 
