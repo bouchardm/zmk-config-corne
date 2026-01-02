@@ -130,7 +130,7 @@
 &none  &kp ESCAPE      &trans            &trans         &kp LC(R)       &trans          &kp K_COPY      &trans         &trans        &kp TAB    &kp K_PASTE  &none
 &none  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LEFT_META   &trans          &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans       &none
 &none  &kp C_AC_UNDO   &kp C_AC_CUT      &kp C_AC_COPY  &kp C_AC_PASTE  &kp LC(LEFT)    &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans       &none
-                                         &trans         &trans          &trans          &trans          &trans         &trans
+                                         &trans         &trans          &trans          &kp ENTER       &trans         &trans
             >;
 
             label = "vim";
