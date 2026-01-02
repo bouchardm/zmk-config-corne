@@ -138,8 +138,8 @@
 
         prog {
             bindings = <
-&none  &kp RA(NUMBER_2)  &kp LESS_THAN     &kp LS(POUND)  &kp PLUS   &kp AMPS            &kp RA(LEFT_BRACKET)  &kp BACKSLASH         &kp PIPE               &kp EQUAL  &mo 3         &none
-&none  &kp EXCL          &kp RS(NUMBER_2)  &kp TILDE      &kp MINUS  &kp DOLLAR          &kp RA(RBKT)          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp COLON     &none
+&none  &kp RA(NUMBER_2)  &kp RS(NUMBER_2)  &kp LS(POUND)  &kp PLUS   &kp AMPS            &kp RA(LEFT_BRACKET)  &kp BACKSLASH         &kp PIPE               &kp EQUAL  &mo 3         &none
+&none  &kp EXCL          &kp LESS_THAN     &kp TILDE      &kp MINUS  &kp DOLLAR          &kp RA(RBKT)          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp COLON     &none
 &none  &kp STAR          &kp APOS          &kp RA(GRAVE)  &kp UNDER  &kp RS(NUMBER_6)    &kp PERCENT           &kp RA(SINGLE_QUOTE)  &kp RA(BACKSLASH)      &kp GRAVE  &kp RA(SEMI)  &none
                                            &trans         &trans     &trans              &trans                &trans                &trans
             >;
